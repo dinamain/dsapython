@@ -31,3 +31,9 @@ if __name__ == "__main__":
     sol = Solution()     # create object
     result = sol.isAnagram(s,t)
     print("isAnagram:", result)
+
+
+
+
+
+    
