@@ -57,3 +57,92 @@ def copy(arr):
 Time: O(n)
 Space: O(n) ❗ (new array)
 Using dictionary/set = extra space.
+
+
+
+
+✅ DSA PROBLEM–SOLVING CHECKLIST (ARRAY / STRING)
+🔹 STEP 1: READ THE QUESTION SLOWLY
+
+Underline (mentally or on paper):
+
+continuous / contiguous
+
+subarray / substring
+
+longest / shortest / count
+
+sum / average / equal
+
+Do NOT think about code yet.
+
+🔹 STEP 2: IS IT CONTINUOUS?
+
+Ask:
+
+“Do the elements have to be next to each other?”
+
+YES → go to Step 3
+
+NO → go to Step 7
+
+🔹 STEP 3: ARE NEGATIVE NUMBERS POSSIBLE?
+
+(or can they appear after conversion?)
+
+YES → ❌ Sliding Window breaks
+→ ✅ Prefix Sum + Hash Map
+
+NO → go to Step 4
+
+🔹 STEP 4: WHAT IS FIXED?
+
+Ask:
+
+Is window size fixed (k)?
+
+YES → Fixed Sliding Window
+
+NO → go to Step 5
+
+🔹 STEP 5: WHAT ARE YOU FINDING?
+
+Longest / shortest → Variable Sliding Window
+
+Count of subarrays → Prefix Sum
+
+Max / Min sum → Sliding Window / Greedy
+
+🔹 STEP 6: SANITY CHECK
+
+If logic depends on:
+
+“sum increases when I add”
+
+“sum decreases when I remove”
+
+Then:
+
+❌ Negatives allowed → invalid
+
+✅ All positives → valid
+
+🔹 STEP 7: NOT CONTINUOUS
+
+If elements can be picked anywhere:
+
+Pairs / frequency → Hash Map
+
+Sorting allowed → Sort + Two Pointers
+
+Unique / duplicate → Set
+
+🧠 MICRO-CHECK (ASK BEFORE CODING)
+
+Answer these 3:
+
+Window or prefix?
+
+Fixed or variable?
+
+Count or length?
